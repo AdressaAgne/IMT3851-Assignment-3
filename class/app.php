@@ -24,7 +24,7 @@ class App{
     /**
     *   App params
     */
-    public static $debug = true,
+    public static $debug = false,
                   $config;
     
     /**
@@ -40,14 +40,13 @@ class App{
         self::$config = parse_ini_file("data/config.ini");
         
         $this->pdo = new Database(self::$config);
-        
-        if(self::$debug){
-            echo '<pre>';
-            print_r($this);
-            echo '</pre>';
-        }
     }
 
 }
 
 $app = new App();
+if($app::$debug){
+    echo '<pre>';
+    print_r($app);
+    echo '</pre>';
+}

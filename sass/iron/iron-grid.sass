@@ -1,0 +1,46 @@
+.#{$iron-grid-row-name}
+    width: 100%
+    clear: both
+    box-sizing: border-box
+    padding-left: $iron-grid-gutter
+
+[class*='#{$iron-grid-col-name}-']
+    float: left
+    box-sizing: border-box
+    padding-right: $iron-grid-gutter
+    padding-top: $iron-grid-gutter
+
+// Large
+@media (min-width: $iron-grid-breakpoint-large)
+    @for $i from 1 to $iron-grid-columns+1
+        .#{$iron-grid-col-name}-#{$iron-grid-breakpoint-large-name}-#{$i}
+            width: (100% / 12) * $i
+
+
+// Normal
+@for $i from 1 to $iron-grid-columns+1
+    .#{$iron-grid-col-name}-#{$i}
+        width: (100% / 12) * $i
+
+
+// Tablet
+@media (max-width: $iron-grid-breakpoint-medium)
+    @for $i from 1 to $iron-grid-columns+1
+        .#{$iron-grid-col-name}-#{$iron-grid-breakpoint-medium-name}-#{$i}
+            width: (100% / 12) * $i
+
+
+// Phone
+@media (max-width: $iron-grid-breakpoint-small)
+    @for $i from 1 to $iron-grid-columns+1
+        .#{$iron-grid-col-name}-#{$iron-grid-breakpoint-small-name}-#{$i}
+            width: (100% / 12) * $i
+
+
+
+.#{$iron-grid-col-name}--centered
+    margin-left: auto
+    margin-right: auto
+    float: none
+    padding-left: $iron-grid-gutter
+

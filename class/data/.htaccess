@@ -1,2 +1,2 @@
 # Deny access to data files from users who try the direct url
-#deny from all
+deny from all
