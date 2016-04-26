@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Main site</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body> 
@@ -13,13 +15,14 @@
         <div class="col-l-3 col-4 col-m-6 col-s-6">
             <article class="paper-card">
                 <header class="paper-card__header" style="background-image:url(img/placeholder/1.jpg);">
-                    <h2 class="paper-card__header--text">Article header</h2>
+                    <h2 class="paper-card__header--text"><i class="material-icons">face</i> <i class="material-icons">done</i> </h2>
                 </header>
                 <main class="paper-card__content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorum sunt beatae corrupti, nam unde voluptatibus non doloribus, illo laudantium!</p>
                 </main>
                 <footer class="paper-card__footer">
-                    <a href="#">Article Footer</a>
+                    <a href="#">Share</a>
+                    <a href="#">Explore</a>
                 </footer>
             </article>
         </div>
