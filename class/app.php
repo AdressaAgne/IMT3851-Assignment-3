@@ -6,9 +6,9 @@
 *   IMT3851 Assignment 3
 *   Team Whisky:
 *       Agne Ødegaard    |  140699
-*       Mia Tollaksvik   |  14xxxx
+*       Mia Tollaksvik   |  140687
 *       Øyvind Grimstad  |  140694
-*       Vegard Brestad   |  14xxxx
+*       Vegard Brestad   |  140698
 */
 
 /**
